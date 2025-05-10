@@ -1,4 +1,3 @@
-#include "SDL3/SDL_video.h"
 #include <stdio.h>
 #include <SDL3/SDL.h>
 #include <stdbool.h>
@@ -210,6 +209,7 @@ int main(void)
         }
 
     }
+    SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
 
